@@ -1,0 +1,28 @@
+{
+  "name": "KNUST UI",
+  "version": "1.0.0",
+  "schemaVersion": "1",
+  "components": [
+    {
+      "name": "button",
+      "displayName": "Button",
+      "description": "A customizable button component.",
+      "version": "1.0.0",
+      "manifest": "components/button/manifest.json"
+    },
+    {
+      "name": "card",
+      "displayName": "Card",
+      "description": "A flexible content container.",
+      "version": "1.0.0",
+      "manifest": "components/card/manifest.json"
+    },
+    {
+      "name": "alert",
+      "displayName": "Alert",
+      "description": "A notification component.",
+      "version": "1.0.0",
+      "manifest": "components/alert/manifest.json"
+    }
+  ]
+}

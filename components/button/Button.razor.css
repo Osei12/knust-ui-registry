@@ -1,0 +1,34 @@
+.knust-ui-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    padding: 0.625rem 1rem;
+
+    border: none;
+    border-radius: 0.5rem;
+
+    background: #bee025;
+    color: #111827;
+
+    font-weight: 600;
+    cursor: pointer;
+
+    transition:
+        opacity 150ms ease,
+        transform 150ms ease;
+}
+
+.knust-ui-button:hover {
+    opacity: 0.9;
+}
+
+.knust-ui-button:active {
+    transform: translateY(1px);
+}
+
+.knust-ui-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

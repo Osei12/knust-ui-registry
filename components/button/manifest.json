@@ -1,0 +1,20 @@
+{
+  "name": "button",
+  "displayName": "Button",
+  "description": "A customizable button component.",
+  "version": "1.0.0",
+  "files": [
+    {
+      "path": "Button.razor",
+      "url": "components/button/Button.razor",
+      "type": "component"
+    },
+    {
+      "path": "Button.razor.css",
+      "url": "components/button/Button.razor.css",
+      "type": "style"
+    }
+  ],
+  "dependencies": [],
+  "packages": []
+}

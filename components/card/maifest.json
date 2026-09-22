@@ -1,0 +1,20 @@
+{
+  "name": "card",
+  "displayName": "Card",
+  "description": "A flexible content container.",
+  "version": "1.0.0",
+  "files": [
+    {
+      "path": "Card.razor",
+      "url": "components/card/Card.razor",
+      "type": "component"
+    },
+    {
+      "path": "Card.razor.css",
+      "url": "components/card/Card.razor.css",
+      "type": "style"
+    }
+  ],
+  "dependencies": [],
+  "packages": []
+}
