@@ -1,6 +1,6 @@
 using System.ComponentModel;
 
-namespace Registry.components.button;
+namespace __MYUI_NAMESPACE__;
 
 public class Button:ComponentBase
 {
