@@ -1,4 +1,6 @@
 using System.ComponentModel;
+using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Components.Web;
 
 namespace __MYUI_NAMESPACE__;
 
