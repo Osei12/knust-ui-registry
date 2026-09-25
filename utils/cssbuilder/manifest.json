@@ -1,0 +1,11 @@
+{
+  "name": "CssBuilder",
+  "version": "1.0.0",
+  "files": [
+    {
+        "path": "CssBuilder.cs",
+        "url": "utils/cssbuilder/CssBuilder.cs",
+        "type": "utility"
+    }
+  ]
+}
