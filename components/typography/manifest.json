@@ -1,0 +1,19 @@
+{
+  "name": "typograpahy",
+  "displayName": "Typography",
+  "description": "A customizable switch component.",
+  "version": "1.0.0",
+  "files": [
+    {
+      "path": "Typography.razor",
+      "url": "components/typograpahy/Typography.razor",
+      "type": "component"
+    }
+  ],
+  "dependencies": {
+    "utils": [],
+    "components": [],
+    "services": []
+  },
+  "packages": []
+}

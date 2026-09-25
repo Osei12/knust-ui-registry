@@ -1,0 +1,24 @@
+{
+  "name": "input",
+  "displayName": "Input",
+  "description": "A customizable input component.",
+  "version": "1.0.0",
+  "files": [
+    {
+      "path": "Input.razor",
+      "url": "components/input/Input.razor",
+      "type": "component"
+    },
+    {
+      "path": "Input.razor.cs",
+      "url": "components/input/Input.razor.cs",
+      "type": "component"
+    }
+  ],
+  "dependencies": {
+    "utils": [],
+    "components": [],
+    "services": []
+  },
+  "packages": []
+}

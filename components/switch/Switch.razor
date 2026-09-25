@@ -1,0 +1,13 @@
+@namespace __MYUI_NAMESPACE__
+
+<button type="button" 
+        role="switch" 
+        aria-checked="@Checked" 
+        data-state="@(Checked ? "checked" : "unchecked")"
+        disabled="@Disabled"
+        @attributes="AdditionalAttributes"
+        class="@SwitchClasses"
+        @onclick="ToggleAsync">
+    <span data-state="@(Checked ? "checked" : "unchecked")" 
+          class="pointer-events-none block h-4 w-4 rounded-full bg-white shadow-lg ring-0 transition-transform duration-200 ease-in-out @(Checked ? "translate-x-4" : "translate-x-0")"></span>
+</button>

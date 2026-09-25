@@ -1,0 +1,24 @@
+{
+  "name": "switch",
+  "displayName": "Switch",
+  "description": "A customizable switch component.",
+  "version": "1.0.0",
+  "files": [
+    {
+      "path": "Switch.razor",
+      "url": "components/switch/Switch.razor",
+      "type": "component"
+    },
+    {
+      "path": "Switch.razor.cs",
+      "url": "components/switch/Switch.razor.cs",
+      "type": "cs"
+    }
+  ],
+  "dependencies": {
+    "utils": [],
+    "components": [],
+    "services": []
+  },
+  "packages": []
+}

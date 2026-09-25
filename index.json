@@ -4,18 +4,11 @@
   "schemaVersion": "1",
   "components": [
     {
-      "name": "carousel",
-      "displayName": "Carousel",
-      "description": "A customizable carousel component.",
+      "name": "input",
+      "displayName": "Input",
+      "description": "A customizable input component.",
       "version": "1.0.0",
-      "manifest": "components/carousel/manifest.json"
-    },
-    {
-      "name": "card",
-      "displayName": "Card",
-      "description": "A customizable card component.",
-      "version": "1.0.0",
-      "manifest": "components/card/manifest.json"
+      "manifest": "components/input/manifest.json"
     },
     {
       "name": "combobox",
@@ -32,11 +25,39 @@
       "manifest": "components/checkbox/manifest.json"
     },
     {
-      "name": "button",
-      "displayName": "Button",
-      "description": "A customizable button component.",
+      "name": "typograpahy",
+      "displayName": "Typography",
+      "description": "A customizable switch component.",
       "version": "1.0.0",
-      "manifest": "components/button/manifest.json"
+      "manifest": "components/typography/manifest.json"
+    },
+    {
+      "name": "switch",
+      "displayName": "Switch",
+      "description": "A customizable switch component.",
+      "version": "1.0.0",
+      "manifest": "components/switch/manifest.json"
+    },
+    {
+      "name": "skeleton",
+      "displayName": "Skeleton",
+      "description": "A customizable skeleton component.",
+      "version": "1.0.0",
+      "manifest": "components/skeleton/manifest.json"
+    },
+    {
+      "name": "carousel",
+      "displayName": "Carousel",
+      "description": "A customizable carousel component.",
+      "version": "1.0.0",
+      "manifest": "components/carousel/manifest.json"
+    },
+    {
+      "name": "avatar",
+      "displayName": "Avatar",
+      "description": "A depiction of a profile image",
+      "version": "1.0.0",
+      "manifest": "components/avatar/manifest.json"
     },
     {
       "name": "alert",
@@ -53,18 +74,25 @@
       "manifest": "components/accordion/manifest.json"
     },
     {
+      "name": "card",
+      "displayName": "Card",
+      "description": "A customizable card component.",
+      "version": "1.0.0",
+      "manifest": "components/card/manifest.json"
+    },
+    {
+      "name": "button",
+      "displayName": "Button",
+      "description": "A customizable button component.",
+      "version": "1.0.0",
+      "manifest": "components/button/manifest.json"
+    },
+    {
       "name": "badge",
       "displayName": "Badge",
       "description": "A customizable badge component.",
       "version": "1.0.0",
       "manifest": "components/badge/manifest.json"
-    },
-    {
-      "name": "avatar",
-      "displayName": "Avatar",
-      "description": "A depiction of a profile image",
-      "version": "1.0.0",
-      "manifest": "components/avatar/manifest.json"
     }
   ]
 }

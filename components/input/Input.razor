@@ -1,0 +1,38 @@
+@namespace __MYUI_NAMESPACE__
+
+<div class="flex flex-col gap-1.5 @ContainerClass">
+    @if (!string.IsNullOrEmpty(Label))
+    {
+        <label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-slate-700 dark:text-slate-300">
+            @Label
+            @if (Required)
+            {
+                <span class="text-red-500">*</span>
+            }
+        </label>
+    }
+    
+    <input
+        type="@Type"
+        class="@InputClasses"
+        value="@Value"
+        @oninput="OnInput"
+        placeholder="@Placeholder"
+        disabled="@Disabled"
+        required="@Required"
+        @attributes="AdditionalAttributes" />
+        
+    @if (!string.IsNullOrEmpty(Description))
+    {
+        <p class="text-[0.8rem] text-slate-500 dark:text-slate-400">
+            @Description
+        </p>
+    }
+    
+    @if (EditContext != null && ValueExpression != null)
+    {
+        <div class="text-[0.8rem] font-medium text-red-500">
+            <ValidationMessage For="@ValueExpression" />
+        </div>
+    }
+</div>
