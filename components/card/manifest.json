@@ -1,7 +1,7 @@
 {
   "name": "card",
   "displayName": "Card",
-  "description": "A flexible content container.",
+  "description": "A customizable card component.",
   "version": "1.0.0",
   "files": [
     {
@@ -10,14 +10,40 @@
       "type": "component"
     },
     {
-      "path": "Card.razor.css",
-      "url": "components/card/Card.razor.css",
-      "type": "style"
+      "path": "CardContent.razor",
+      "url": "components/card/CardContent.razor",
+      "type": "component"
+    },
+    {
+      "path": "CardHeader.razor",
+      "url": "components/card/CardHeader.razor",
+      "type": "component"
+    },
+    {
+      "path": "CardTitle.razor",
+      "url": "components/card/CardTitle.razor",
+      "type": "component"
+    },
+    {
+      "path": "CardDescripton.razor",
+      "url": "components/card/CardDescripton.razor",
+      "type": "component"
+    },
+    {
+      "path": "CardFooter.razor",
+      "url": "components/card/CardFooter.razor",
+      "type": "component"
+    },
+    {
+      "path": "Card.razor.cs",
+      "url": "components/card/Card.razor.cs",
+      "type": "cs"
     }
   ],
-  "dependencies": {
+  "dependencies":{
     "utils":[],
-    "components":["button"]
+    "components":[],
+    "services":[]
   },
   "packages": []
 }

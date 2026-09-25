@@ -15,8 +15,10 @@
       "type": "code"
     }
   ],
-  "dependencies": {
-    "utils":["CssBuilder"]
+   "dependencies":{
+    "utils":[],
+    "components":[],
+    "services":[]
   },
   "packages": []
 }

@@ -1,0 +1,313 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #afafaf40;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00923680;
+}
+
+/* Firefox support */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #a5a5a540 transparent;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+
+.grid-background {
+    background-image:
+        linear-gradient(to right, #e7e5e4 1px, transparent 1px),
+        linear-gradient(to bottom, #e7e5e4 1px, transparent 1px);
+
+    background-size: 20px 20px;
+    background-position: 0 0, 0 0;
+
+    -webkit-mask-image:
+        repeating-linear-gradient(to right,
+            black 0px,
+            black 3px,
+            transparent 3px,
+            transparent 8px),
+        repeating-linear-gradient(to bottom,
+            black 0px,
+            black 3px,
+            transparent 3px,
+            transparent 8px),
+        radial-gradient(ellipse 70% 60% at 50% 0%, #000 60%, transparent 100%);
+
+    mask-image:
+        repeating-linear-gradient(to right,
+            black 0px,
+            black 3px,
+            transparent 3px,
+            transparent 8px),
+        repeating-linear-gradient(to bottom,
+            black 0px,
+            black 3px,
+            transparent 3px,
+            transparent 8px),
+        radial-gradient(ellipse 70% 60% at 50% 0%, #000 60%, transparent 100%);
+
+    mask-composite: intersect;
+    -webkit-mask-composite: source-in;
+}
+
+.grid-pattern {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+
+    background-image:
+        linear-gradient(to right, #e7e5e4 1px, transparent 1px),
+        linear-gradient(to bottom, #e7e5e4 1px, transparent 1px);
+
+    background-size: 20px 20px;
+    background-position: 0 0, 0 0;
+
+    mask-image:
+        repeating-linear-gradient(
+            to right,
+            black 0px,
+            black 3px,
+            transparent 3px,
+            transparent 8px
+        ),
+        repeating-linear-gradient(
+            to bottom,
+            black 0px,
+            black 3px,
+            transparent 3px,
+            transparent 8px
+        ),
+        radial-gradient(
+            ellipse 60% 60% at 50% 50%,
+            #000 30%,
+            transparent 70%
+        );
+
+    -webkit-mask-image:
+        repeating-linear-gradient(
+            to right,
+            black 0px,
+            black 3px,
+            transparent 3px,
+            transparent 8px
+        ),
+        repeating-linear-gradient(
+            to bottom,
+            black 0px,
+            black 3px,
+            transparent 3px,
+            transparent 8px
+        ),
+        radial-gradient(
+            ellipse 60% 60% at 50% 50%,
+            #000 30%,
+            transparent 70%
+        );
+
+    mask-composite: intersect;
+    -webkit-mask-composite: source-in;
+}
+
+.dark .grid-pattern {
+    background-image:
+        linear-gradient(to right, #3f3f46 1px, transparent 1px),
+        linear-gradient(to bottom, #343434 1px, transparent 1px);
+}
+
+/* 🌙 Dark mode override */
+.dark .grid-background {
+    background-image:
+        linear-gradient(to right, #3f3f46 1px, transparent 1px),
+        linear-gradient(to bottom, #3f3f46 1px, transparent 1px);
+}
+
+@layer utilities {
+  .hero-bg {
+    background-image: radial-gradient(circle at top left, rgba(16, 185, 129, 0.18), transparent 32%), radial-gradient(circle at bottom right, rgba(255, 188, 59, 0.18), transparent 28%), linear-gradient(180deg, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.88));
+  }
+
+  .mesh-gradient {
+    background: radial-gradient(at 0% 0%, rgba(23, 116, 69, 0.15) 0, transparent 50%),
+                radial-gradient(at 100% 0%, rgba(0, 146, 54, 0.1) 0, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(255, 188, 59, 0.1) 0, transparent 50%),
+                radial-gradient(at 0% 100%, rgba(23, 116, 69, 0.15) 0, transparent 50%);
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .glass-card-light {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes toast-in {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+
+  @keyframes toast-out {
+    from { transform: translateX(0); opacity: 1; }
+    to { transform: translateX(100%); opacity: 0; }
+  }
+
+  .animate-toast-in {
+    animation: toast-in 0.3s ease-out forwards;
+  }
+
+  .animate-toast-out {
+    animation: toast-out 0.3s ease-in forwards;
+  }
+
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes fade-in-up {
+    from { 
+      opacity: 0; 
+      transform: translateY(20px); 
+    }
+    to { 
+      opacity: 1; 
+      transform: translateY(0); 
+    }
+  }
+
+  @keyframes scale-in {
+    from { 
+      opacity: 0; 
+      transform: scale(0.95); 
+    }
+    to { 
+      opacity: 1; 
+      transform: scale(1); 
+    }
+  }
+
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+
+  .fade-in {
+    animation: fade-in 0.6s ease-out forwards;
+  }
+
+  .fade-in-up {
+    animation: fade-in-up 0.6s ease-out forwards;
+  }
+
+  .scale-in {
+    animation: scale-in 0.4s ease-out forwards;
+  }
+
+  .shimmer {
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+  }
+
+  .dark .shimmer {
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.03), transparent);
+  }
+}
+
+[role="alert"] {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+[role="alert"].hidden {
+  opacity: 0;
+}
+
+.loading-progress {
+    position: relative;
+    display: block;
+    width: 8rem;
+    height: 8rem;
+    margin: 1rem auto;
+}
+
+.loading-progress circle {
+    fill: none;
+    stroke: #e0e0e0;
+    stroke-width: 0.6rem;
+    transform-origin: 50% 50%;
+    transform: rotate(-90deg);
+}
+
+.loading-progress circle:last-child {
+    stroke: #177445;
+    stroke-dasharray: calc(3.14159 * 0.8 * 100);
+    stroke-dashoffset: calc(3.14159 * 0.8 * (100 - var(--blazor-load-percentage, 0)));
+    transition: stroke-dashoffset 0.05s linear;
+}
+
+.loading-progress-text {
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #4b5563;
+}
+
+.loading-progress-text::after {
+    content: var(--blazor-load-percentage-text, "Loading...");
+}
+
+.dark .loading-progress circle {
+    stroke: #374151;
+}
+
+.dark .loading-progress circle:last-child {
+    stroke: #10b981;
+}
+
+.dark .loading-progress-text {
+    color: #9ca3af;
+}

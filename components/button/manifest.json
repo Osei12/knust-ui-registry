@@ -21,7 +21,9 @@
     }
   ],
   "dependencies":{
-    "utils":[]
+    "utils":[],
+    "components":[],
+    "services":[]
   },
   "packages": []
 }

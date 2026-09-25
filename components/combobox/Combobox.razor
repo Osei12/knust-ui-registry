@@ -1,0 +1,72 @@
+@namespace __MYUI_NAMESPACE__
+@typeparam TValue
+
+<div id="@_id" @attributes="AdditionalAttributes" class="grid w-full items-center gap-1.5 @Class">
+    @if (!string.IsNullOrEmpty(Label))
+    {
+        <label class="text-sm font-medium leading-none text-slate-900 dark:text-white">
+            @Label
+        </label>
+    }
+
+    <div class="relative">
+        <button type="button"
+                @onclick="ToggleDropdown"
+                disabled="@Disabled"
+                class="@ComboboxButtonClasses">
+            <span class="truncate">
+                @(SelectedItem?.Label ?? Placeholder)
+            </span>
+            <Blazicon Svg="Lucide.ChevronsUpDown" class="ml-2 h-4 w-4 shrink-0 opacity-50" />
+        </button>
+
+        @if (_isOpen)
+        {
+            <div class="absolute top-full z-[999] mt-2 w-full overflow-hidden rounded-md border bg-white text-slate-950 shadow-md animate-in fade-in-0 zoom-in-95 dark:border-white/10 dark:bg-slate-950 dark:text-slate-50">
+                <div class="flex items-center border-b px-3 dark:border-white/10">
+                    <Blazicon Svg="Lucide.Search" class="mr-2 h-4 w-4 shrink-0 opacity-50" />
+                    <input @ref="_searchInputRef"
+                           class="flex h-10 w-full rounded-md bg-transparent py-3 text-sm outline-none placeholder:text-slate-500 disabled:cursor-not-allowed disabled:opacity-50 dark:placeholder:text-slate-400"
+                           placeholder="@SearchPlaceholder"
+                           value="@_searchTerm"
+                           @oninput="OnSearchInput"
+                           @onclick:stopPropagation />
+                </div>
+                <div class="max-h-[300px] overflow-y-auto p-1">
+                    @if (!FilteredItems.Any())
+                    {
+                        <div class="relative flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none text-slate-500">
+                            No options found.
+                        </div>
+                    }
+                    else
+                    {
+                        @foreach (var item in FilteredItems)
+                        {
+                            <button type="button"
+                                    class="relative flex w-full cursor-pointer select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none hover:bg-slate-100 hover:text-slate-900 dark:hover:bg-white/5 dark:hover:text-slate-50 transition-colors"
+                                    @onclick="() => SelectItem(item)"
+                                    @onclick:stopPropagation>
+                                <Blazicon Svg="Lucide.Check" 
+                                          class="@($"mr-2 h-4 w-4 {(EqualityComparer<TValue>.Default.Equals(item.Value, Value) ? "opacity-100" : "opacity-0")}")" />
+                                @item.Label
+                            </button>
+                        }
+                    }
+                </div>
+            </div>
+        }
+    </div>
+
+    @if (!string.IsNullOrEmpty(Description))
+    {
+        <p class="text-[0.8rem] text-slate-500 dark:text-slate-400">@Description</p>
+    }
+
+    @if (EditContext != null && ValueExpression != null)
+    {
+        <div class="text-[0.8rem] font-medium text-red-500">
+            <ValidationMessage For="@ValueExpression" />
+        </div>
+    }
+</div>

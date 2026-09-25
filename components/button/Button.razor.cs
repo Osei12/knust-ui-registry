@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Components.Web;
 
 namespace __MYUI_NAMESPACE__;
 
-public class Button:ComponentBase
+public partial class Button:ComponentBase
 {
 
      [Parameter]

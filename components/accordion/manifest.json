@@ -12,7 +12,7 @@
     {
       "path": "Accordion.razor.cs",
       "url": "components/accordion/Accordion.razor.cs",
-      "type": "code"
+      "type": "cs"
     },
     {
       "path": "AccordionItem.razor",
@@ -22,11 +22,13 @@
     {
       "path": "AccordionItem.razor.cs",
       "url": "components/accordion/AccordionItem.razor.cs",
-      "type": "code"
+      "type": "cs"
     }
   ],
-  "dependencies": {
-    "utils":[]
+ "dependencies":{
+    "utils":[],
+    "components":[],
+    "services":[]
   },
   "packages": []
 }

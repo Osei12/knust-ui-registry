@@ -1,0 +1,27 @@
+{
+  "name": "badge",
+  "displayName": "Badge",
+  "description": "A customizable badge component.",
+  "version": "1.0.0",
+  "files": [
+    {
+      "path": "Carousel.razor",
+      "url": "components/badge/Badge.razor",
+      "type": "component"
+    }   
+    ,
+    {
+      "path": "Badge.razor.cs",
+      "url": "components/badge/Badge.razor.cs",
+      "type": "cs"
+    }
+   
+  
+  ],
+  "dependencies":{
+    "utils":[],
+    "components":[],
+    "services":[]
+  },
+  "packages": []
+}

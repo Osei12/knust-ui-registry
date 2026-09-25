@@ -10,13 +10,15 @@
       "type": "component"
     },
     {
-      "path": "Alert.razor.css",
-      "url": "components/alert/Alert.razor.css",
-      "type": "style"
+      "path": "Alert.razor.cs",
+      "url": "components/alert/Alert.razor.cs",
+      "type": "cs"
     }
   ],
-  "dependencies": {
-    "utils":[]
+ "dependencies":{
+    "utils":[],
+    "components":[],
+    "services":[]
   },
   "packages": []
 }

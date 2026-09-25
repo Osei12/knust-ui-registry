@@ -1,0 +1,44 @@
+{
+  "name": "carousel",
+  "displayName": "Carousel",
+  "description": "A customizable carousel component.",
+  "version": "1.0.0",
+  "files": [
+    {
+      "path": "Carousel.razor",
+      "url": "components/carousel/Carousel.razor",
+      "type": "component"
+    },
+    {
+      "path": "CarouseContentl.razor",
+      "url": "components/carousel/CarouselContent.razor",
+      "type": "component"
+    },
+    {
+      "path": "CarouselItem.razor",
+      "url": "components/carousel/CarouselItem.razor",
+      "type": "component"
+    }
+    ,
+    {
+      "path": "CarouselNext.razor",
+      "url": "components/carousel/CarouselNext.razor",
+      "type": "component"
+    }
+   
+    ,
+    {
+      "path": "CarouselPrevious.razor",
+      "url": "components/carousel/CarouselPrevious.razor",
+      "type": "component"
+    }
+   
+  
+  ],
+  "dependencies":{
+    "utils":[],
+    "components":[],
+    "services":["theme"]
+  },
+  "packages": []
+}

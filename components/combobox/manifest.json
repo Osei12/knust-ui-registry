@@ -1,0 +1,28 @@
+{
+  "name": "combobox",
+  "displayName": "Combobox",
+  "description": "A customizable combobox component.",
+  "version": "1.0.0",
+  "files": [
+    {
+      "path": "Combobox.razor",
+      "url": "components/combobox/Combobox.razor",
+      "type": "component"
+    }
+   
+    ,
+    {
+      "path": "Combobox.razor.cs",
+      "url": "components/combobox/CarouselPrevious.razor.cs",
+      "type": "cs"
+    }
+   
+  
+  ],
+  "dependencies":{
+    "utils":[],
+    "components":[],
+    "services":["theme"]
+  },
+  "packages": []
+}

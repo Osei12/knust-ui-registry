@@ -1,0 +1,21 @@
+{
+  "name": "checkbox",
+  "displayName": "Checkbox",
+  "description": "A customizable checkbox component.",
+  "version": "1.0.0",
+  "files": [
+    {
+      "path": "Carousel.razor",
+      "url": "components/checkbox/Checkbox.razor",
+      "type": "component"
+    }
+   
+  
+  ],
+  "dependencies":{
+    "utils":[],
+    "components":[],
+    "services":[]
+  },
+  "packages": []
+}

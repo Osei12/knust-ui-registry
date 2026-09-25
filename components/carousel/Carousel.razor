@@ -1,0 +1,38 @@
+@namespace __MYUI_NAMESPACE__
+
+<div id="@Id" @attributes="AdditionalAttributes" class="@ClassName @Class" role="region" aria-roledescription="carousel">
+    @if (Variant == CarouselVariant.FullScreen)
+    {
+        <button @onclick="HandleClose" class="absolute right-8 top-8 z-[60] rounded-full bg-white/20 p-2 text-slate-900 dark:text-white hover:bg-white/40 transition-colors">
+            <Blazicon Svg="Lucide.X" class="h-6 w-6" />
+        </button>
+    }
+    <CascadingValue Value="this">
+        @ChildContent
+    </CascadingValue>
+</div>
+
+@code {
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+    [Parameter] public string? Class { get; set; }
+    [Parameter] public CarouselVariant Variant { get; set; } = CarouselVariant.Default;
+    [Parameter] public EventCallback OnClose { get; set; }
+    [Parameter(CaptureUnmatchedValues = true)] public Dictionary<string, object>? AdditionalAttributes { get; set; }
+
+    public string Id { get; } = "carousel-" + Guid.NewGuid().ToString("N");
+
+    private string ClassName => Variant == CarouselVariant.FullScreen 
+        ? "fixed inset-0 z-50 bg-slate-950 overflow-hidden flex flex-col items-center justify-center" 
+        : "relative w-full";
+
+    private async Task HandleClose()
+    {
+        await OnClose.InvokeAsync();
+    }
+
+    public enum CarouselVariant
+    {
+        Default,
+        FullScreen
+    }
+}

@@ -1,0 +1,21 @@
+@namespace __MYUI_NAMESPACE__
+@inject ThemeService ThemeService
+
+<button @onclick="HandleNext" 
+        class="absolute right-4 top-1/2 -translate-y-1/2 h-8 w-8 rounded-full bg-white/80 dark:bg-slate-950/80 border border-slate-200 dark:border-white/10 flex items-center justify-center text-slate-950 dark:text-white shadow-md hover:bg-white dark:hover:bg-slate-900 transition-colors z-50 @Class"
+        aria-label="Next slide">
+    <Blazicon Svg="Lucide.ChevronRight" class="h-4 w-4" />
+</button>
+
+@code {
+    [CascadingParameter] public Carousel? Parent { get; set; }
+    [Parameter] public string? Class { get; set; }
+
+    private async Task HandleNext()
+    {
+        if (Parent != null)
+        {
+            await ThemeService.ScrollCarouselAsync(Parent.Id, "next");
+        }
+    }
+}

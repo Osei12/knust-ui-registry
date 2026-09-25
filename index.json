@@ -1,8 +1,36 @@
-{
+﻿{
   "name": "KNUST UI",
   "version": "1.0.0",
   "schemaVersion": "1",
   "components": [
+    {
+      "name": "carousel",
+      "displayName": "Carousel",
+      "description": "A customizable carousel component.",
+      "version": "1.0.0",
+      "manifest": "components/carousel/manifest.json"
+    },
+    {
+      "name": "card",
+      "displayName": "Card",
+      "description": "A customizable card component.",
+      "version": "1.0.0",
+      "manifest": "components/card/manifest.json"
+    },
+    {
+      "name": "combobox",
+      "displayName": "Combobox",
+      "description": "A customizable combobox component.",
+      "version": "1.0.0",
+      "manifest": "components/combobox/manifest.json"
+    },
+    {
+      "name": "checkbox",
+      "displayName": "Checkbox",
+      "description": "A customizable checkbox component.",
+      "version": "1.0.0",
+      "manifest": "components/checkbox/manifest.json"
+    },
     {
       "name": "button",
       "displayName": "Button",
@@ -11,32 +39,32 @@
       "manifest": "components/button/manifest.json"
     },
     {
-      "name": "card",
-      "displayName": "Card",
-      "description": "A flexible content container.",
-      "version": "1.0.0",
-      "manifest": "components/card/manifest.json"
-    },
-    {
       "name": "alert",
       "displayName": "Alert",
-      "description": "A notification component.",
+      "description": "A notification component for displaying contextual messages.",
       "version": "1.0.0",
       "manifest": "components/alert/manifest.json"
     },
     {
       "name": "accordion",
       "displayName": "Accordion",
-      "description": "An accordion component.",
+      "description": "A component for grouping items.",
       "version": "1.0.0",
       "manifest": "components/accordion/manifest.json"
     },
     {
-      "name":"avatar",
-      "displayName":"Avatar",
-      "description":"Profile image",
-      "version":"1.0.0",
-      "manifest":"components/avatar/manifest.json"
+      "name": "badge",
+      "displayName": "Badge",
+      "description": "A customizable badge component.",
+      "version": "1.0.0",
+      "manifest": "components/badge/manifest.json"
+    },
+    {
+      "name": "avatar",
+      "displayName": "Avatar",
+      "description": "A depiction of a profile image",
+      "version": "1.0.0",
+      "manifest": "components/avatar/manifest.json"
     }
   ]
 }
