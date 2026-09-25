@@ -1,0 +1,21 @@
+@namespace __MYUI_NAMESPACE__
+
+<div @attributes="AdditionalAttributes" class="@ClassName">
+    @if (!string.IsNullOrEmpty(Src) && !_imageError)
+    {
+        <img src="@Src" alt="@Alt" class="aspect-square object-cover bg-cover h-full w-full" @onerror="HandleImageError" />
+    }
+    else
+    {
+        <div class="flex h-full w-full items-center justify-center rounded-full bg-slate-100 dark:bg-white/10">
+            @if (!string.IsNullOrEmpty(Fallback))
+            {
+                <span class="font-medium uppercase">@Fallback</span>
+            }
+            else
+            {
+                <Blazicon Svg="Lucide.User" class="h-1/2 w-1/2 opacity-50" />
+            }
+        </div>
+    }
+</div>

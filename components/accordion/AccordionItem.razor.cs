@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Components;
 using System.Threading.Tasks;
 
-namespace KnustUiLibrary.Components.UI;
+namespace __MYUI_NAMESPACE__;
 
 public partial class AccordionItem : ComponentBase
 {

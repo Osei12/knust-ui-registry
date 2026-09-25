@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Components;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace KnustUiLibrary.Components.UI;
+namespace __MYUI_NAMESPACE__;
 
 public partial class Accordion : ComponentBase
 {

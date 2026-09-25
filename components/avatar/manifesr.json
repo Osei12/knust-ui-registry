@@ -1,0 +1,20 @@
+{
+  "name": "avatar",
+  "displayName": "Avatar",
+  "description": "A depiction of a profile image",
+  "version": "1.0.0",
+  "files": [
+    {
+      "path": "Card.razor",
+      "url": "components/avatar/Avatar.razor",
+      "type": "component"
+    },
+    {
+      "path": "Avatar.razor.cs",
+      "url": "components/avatar/Avatar.razor.cs",
+      "type": "code"
+    }
+  ],
+  "dependencies": [],
+  "packages": []
+}

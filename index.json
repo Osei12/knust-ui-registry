@@ -30,6 +30,13 @@
       "description": "An accordion component.",
       "version": "1.0.0",
       "manifest": "components/accordion/manifest.json"
+    },
+    {
+      "name":"avatar",
+      "displayName":"Avatar",
+      "description":"Profile image",
+      "version":"1.0.0",
+      "manifest":"components/avatar/manifest.json"
     }
   ]
 }
