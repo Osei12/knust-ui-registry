@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "files": [
     {
-      "path": "Card.razor",
+      "path": "Avatar.razor",
       "url": "components/avatar/Avatar.razor",
       "type": "component"
     },
