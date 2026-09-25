@@ -9,21 +9,17 @@
       "url": "components/button/Button.razor",
       "type": "component"
     },
-    {
-      "path": "Button.razor.css",
-      "url": "components/button/Button.razor.css",
-      "type": "style"
-    },
+
     {
       "path": "Button.razor.cs",
       "url": "components/button/Button.razor.cs",
       "type": "cs"
     }
   ],
-  "dependencies":{
-    "utils":[],
-    "components":[],
-    "services":[]
+  "dependencies": {
+    "utils": [],
+    "components": [],
+    "services": []
   },
   "packages": []
 }
