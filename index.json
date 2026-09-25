@@ -23,6 +23,13 @@
       "description": "A notification component.",
       "version": "1.0.0",
       "manifest": "components/alert/manifest.json"
+    },
+    {
+      "name": "accordion",
+      "displayName": "Accordion",
+      "description": "An accordion component.",
+      "version": "1.0.0",
+      "manifest": "components/accordion/manifest.json"
     }
   ]
 }

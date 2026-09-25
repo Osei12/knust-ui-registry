@@ -1,0 +1,16 @@
+@namespace KnustUiLibrary.Components.UI
+
+<div @attributes="AdditionalAttributes" class="border-b border-slate-200 dark:border-white/10 @Class">
+    <button type="button"
+            @onclick="HandleToggle"
+            class="flex w-full items-center justify-between py-4 text-sm font-medium transition-all hover:underline @(IsOpen ? "text-slate-900 dark:text-white" : "text-slate-600 dark:text-slate-400")">
+        @Title
+        <Blazicon Svg="Lucide.ChevronDown" 
+                  class="@($"h-4 w-4 shrink-0 transition-transform duration-200 {(IsOpen ? "rotate-180" : "")}")" />
+    </button>
+    <div class="overflow-hidden transition-all duration-200 ease-in-out @(IsOpen ? "max-h-96 pb-4 opacity-100" : "max-h-0 opacity-0")">
+        <div class="text-sm text-slate-600 dark:text-slate-400">
+            @ChildContent
+        </div>
+    </div>
+</div>

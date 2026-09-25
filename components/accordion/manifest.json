@@ -1,0 +1,30 @@
+{
+  "name": "accordion",
+  "displayName": "Accordion",
+  "description": "A component for grouping items.",
+  "version": "1.0.0",
+  "files": [
+    {
+      "path": "Accordion",
+      "url": "components/accordion/Accordion.razor",
+      "type": "component"
+    },
+    {
+      "path": "Accordion.razor.cs",
+      "url": "components/accordion/Accordion.razor.cs",
+      "type": "code"
+    },
+    {
+      "path": "AccordionItem.razor",
+      "url": "components/accordion/AccordionItem.razor",
+      "type": "component"
+    },
+    {
+      "path": "AccordionItem.razor.cs",
+      "url": "components/accordion/AccordionItem.razor.cs",
+      "type": "code"
+    }
+  ],
+  "dependencies": [],
+  "packages": []
+}
