@@ -16,7 +16,8 @@
     }
   ],
   "dependencies": {
-    "utils":[]
+    "utils":[],
+    "components":["button"]
   },
   "packages": []
 }
