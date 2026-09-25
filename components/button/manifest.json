@@ -20,6 +20,8 @@
       "type": "cs"
     }
   ],
-  "dependencies": [],
+  "dependencies":{
+    "utils":[]
+  },
   "packages": []
 }

@@ -25,6 +25,8 @@
       "type": "code"
     }
   ],
-  "dependencies": [],
+  "dependencies": {
+    "utils":[]
+  },
   "packages": []
 }
