@@ -5,23 +5,20 @@
   "version": "1.0.0",
   "files": [
     {
-      "path": "Carousel.razor",
+      "path": "Badge.razor",
       "url": "components/badge/Badge.razor",
       "type": "component"
-    }   
-    ,
+    },
     {
       "path": "Badge.razor.cs",
       "url": "components/badge/Badge.razor.cs",
       "type": "cs"
     }
-   
-  
   ],
-  "dependencies":{
-    "utils":[],
-    "components":[],
-    "services":[]
+  "dependencies": {
+    "utils": [],
+    "components": [],
+    "services": []
   },
   "packages": []
 }
