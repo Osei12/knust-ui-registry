@@ -2,7 +2,7 @@ using System.ComponentModel;
 using Microsoft.AspNetCore.Components;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Components.Web;
-using __MYUI_NAMESPACE__.Utils;
+using __UTILS__;
 namespace __MYUI_NAMESPACE__;
 
 
