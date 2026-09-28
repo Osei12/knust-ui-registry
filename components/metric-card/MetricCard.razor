@@ -1,0 +1,71 @@
+@switch (Variant)
+{
+    case MetricVariant.Default:
+        <Card Class="group  hover:shadow-lg duration-300 transition-all cursor-pointer hover:-translate-y-2">
+            <CardContent Class="pt-3 pb-3 space-y-1.5 relative overflow-hidden">
+                @if(Icon != null){
+                <div class="p-4 rounded-lg bg-status-successBg dark:bg-status-successBg/5 text-status-success w-max">
+                    <Blazicon Svg="@Icon" class="w-12 h-12 text-[1.2rem]" />
+                </div>
+
+                }
+
+                <div>
+                    <h6 class="uppercase text-[11px] text-neutral-300 dark:text-neutral-400">@Title</h6>
+                    <h3 class="text-2xl font-bold">@Value</h3>
+                </div>
+
+                <p class="text-xs text-slate-500">@Description</p>
+
+                <Blazicon Svg="@Icon"
+                          class="w-12 text-status-success group-hover:scale-150 duration-300 ease-in-out transition-all h-12 absolute top-5 right-2 text-[5rem] opacity-[0.019]" />
+            </CardContent>
+        </Card>
+        break;
+
+    case MetricVariant.V2:
+        <Card Class="overflow-hidden dark:bg-actionPrimary/15 dark:border-actionPrimary/10 group hover:shadow-lg duration-300 transition-all cursor-pointer hover:-translate-y-2">
+            <CardContent Class="p-0">
+                <div class="flex items-center w-full justify-between pt-4">
+                    <div>
+                        <p class="text-sm text-neutral-300 capitalize dark:text-neutral-400">@Title</p>
+                        <h3 class="text-3xl font-bold">@Value</h3>
+                      
+                    </div>
+
+                    <div class="p-4 rounded-full bg-status-successBg dark:bg-status-successBg/5">
+                        <Blazicon Svg="@Icon" class="w-8 h-8 text-status-success" />
+                    </div>
+                </div>
+                  <span class="text-xs text-status-success">
+                            @Description
+                    </span>
+            </CardContent>
+        </Card>
+        break;
+
+    case MetricVariant.V3:
+        <Card Class="border-l-4 border-0 dark:bg-actionPrimary/15 dark:border-actionPrimary/10 border-status-success dark:border-l-actionPrimary-active20 group hover:shadow-lg duration-300 transition-all cursor-pointer hover:-translate-y-2">
+            <CardContent Class="">
+                <div class="flex gap-4 items-start pt-4">
+                    <Blazicon Svg="@Icon"
+                              class="w-10 h-10 text-status-success" />
+
+                    <div>
+                        <h6 class="text-xs uppercase tracking-wider text-neutral-400">
+                            @Title
+                        </h6>
+
+                        <h2 class="text-4xl font-bold">
+                            @Value
+                        </h2>
+
+                        <p class="text-xs text-slate-500 mt-1">
+                            @Description
+                        </p>
+                    </div>
+                </div>
+            </CardContent>
+        </Card>
+        break;
+}

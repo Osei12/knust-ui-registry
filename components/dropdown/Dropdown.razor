@@ -1,0 +1,14 @@
+@namespace __MYUI_NAMESPACE__
+
+<div id="@_id" @attributes="AdditionalAttributes" class="relative inline-block @Class">
+    <div @onclick="Toggle" class="cursor-pointer">
+        @Trigger
+    </div>
+
+    @if (_isOpen)
+    {
+        <div class="absolute right-0 z-50 mt-2 min-w-[8rem] overflow-hidden rounded-md border bg-white p-1 text-slate-950 shadow-md animate-in fade-in-0 zoom-in-95 dark:border-white/10 dark:bg-slate-950 dark:text-slate-50">
+            @ChildContent
+        </div>
+    }
+</div>

@@ -1,0 +1,24 @@
+{
+  "name": "toast",
+  "displayName": "Toast",
+  "description": "A customizable toast component.",
+  "version": "1.0.0",
+  "files": [
+    {
+      "path": "Toast.razor",
+      "url": "components/toast/Toast.razor",
+      "type": "component"
+    },
+    {
+      "path": "Toaster.razor",
+      "url": "components/toast/Toaster.razor",
+      "type": "component"
+    }
+  ],
+  "dependencies": {
+    "utils": [],
+    "components": [],
+    "services": ["theme"]
+  },
+  "packages": []
+}

@@ -1,0 +1,39 @@
+{
+  "name": "tabs",
+  "displayName": "Tabs",
+  "description": "A customizable tabs component.",
+  "version": "1.0.0",
+  "files": [
+    {
+      "path": "Tabs.razor",
+      "url": "components/tabs/Tabs.razor",
+      "type": "component"
+    },
+    {
+      "path": "TabsContent.razor",
+      "url": "components/tabs/TabsContent.razor",
+      "type": "component"
+    },
+    {
+      "path": "TabsList.razor",
+      "url": "components/tabs/TabsList.razor",
+      "type": "component"
+    },
+    {
+      "path": "TabsTrigger.razor",
+      "url": "components/tabs/TabsTrigger.razor",
+      "type": "component"
+    },
+    {
+      "path": "Tabs.razor.cs",
+      "url": "components/tabs/Tabs.razor.cs",
+      "type": "cs"
+    }
+  ],
+  "dependencies": {
+    "utils": [],
+    "components": [],
+    "services": []
+  },
+  "packages": []
+}

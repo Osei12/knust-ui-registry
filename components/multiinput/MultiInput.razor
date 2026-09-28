@@ -1,0 +1,89 @@
+@using Microsoft.AspNetCore.Components;
+@using Microsoft.AspNetCore.Components.Forms;
+@using System.Linq.Expressions;    
+    <div class="min-h-9 flex flex-wrap items-center gap-1 px-2 py-2 rounded-lg border focus-within:border-primary bg-background  w-full  bg-white  text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-slate-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:bg-slate-950 dark:text-slate-50 dark:placeholder:text-slate-400 transition-colors">
+      @foreach (var value in values) {
+        <span class="inline-flex items-center gap-1 text-xs px-2 py-0.5 rounded-full bg-neutral-50/40">
+              @value
+              <button onclick="@(()=>RemoveValue(value))" class="text-muted-foreground hover:text-foreground">
+                <Blazicon Svg="Lucide.X" />
+              </button>
+            </span>
+      }
+      <input
+        @bind="Value"
+        @bind:event="oninput"
+        @onkeydown="HanldeKeyDown"
+        placeholder="@Placeholder"
+        @onblur="SubmitValue"
+        type="text"
+        class="flex-1 min-w-[120px] bg-transparent text-sm outline-none"
+        
+      />
+    </div>
+
+
+    @code{
+      [Parameter] public string? Placeholder { get; set; }
+      [CascadingParameter] private EditContext? EditContext { get; set; }
+      [Parameter] public Expression<Func<string>>? ValueExpression { get; set; }
+      [Parameter] public EventCallback<string> ValueChanged { get; set; }
+      [Parameter] public EventCallback<List<string>> ValuesChanged { get; set; }
+      private FieldIdentifier _fieldIdentifier;
+      [Parameter] public  List<string> values {get;set;}= new List<string>();
+
+      [Parameter] public string? Value {get;set;} = string.Empty;
+
+      private async Task SubmitValue()
+      {
+        if(!string.IsNullOrEmpty(Value)){
+          await AddValue(Value);
+        }
+          await InvokeAsync(StateHasChanged);
+      }
+
+      private async Task AddValue(string value)
+      {
+        if (!string.IsNullOrEmpty(value))
+        {
+          values.Add(value);
+          Value = string.Empty;
+          await InvokeAsync(StateHasChanged);
+          await ValueChanged.InvokeAsync(Value);
+          await ValuesChanged.InvokeAsync(values);
+        }
+      }
+
+      private async Task HanldeKeyDown(KeyboardEventArgs e)
+      {
+        if (e.Key == "Enter")
+        {
+          @* Console.WriteLine(value: "Enter key pressed"); *@
+
+           if(!string.IsNullOrEmpty(Value)){
+              await AddValue(Value);
+            }
+          
+        }
+      }
+
+      private async Task RemoveValue(string value)
+      {
+        values.Remove(value);
+        await InvokeAsync(StateHasChanged);
+        await ValuesChanged.InvokeAsync(values);
+      }
+
+
+         private async Task OnInput(ChangeEventArgs e)
+    {
+        Value = e.Value?.ToString();
+        await ValueChanged.InvokeAsync(Value);
+        
+        if (EditContext != null && ValueExpression != null)
+        {
+            EditContext.NotifyFieldChanged(_fieldIdentifier);
+        }
+    }
+
+    }

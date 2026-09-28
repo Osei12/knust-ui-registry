@@ -4,32 +4,11 @@
   "schemaVersion": "1",
   "components": [
     {
-      "name": "input",
-      "displayName": "Input",
-      "description": "A customizable input component.",
+      "name": "skeleton",
+      "displayName": "Skeleton",
+      "description": "A customizable skeleton component.",
       "version": "1.0.0",
-      "manifest": "components/input/manifest.json"
-    },
-    {
-      "name": "combobox",
-      "displayName": "Combobox",
-      "description": "A customizable combobox component.",
-      "version": "1.0.0",
-      "manifest": "components/combobox/manifest.json"
-    },
-    {
-      "name": "checkbox",
-      "displayName": "Checkbox",
-      "description": "A customizable checkbox component.",
-      "version": "1.0.0",
-      "manifest": "components/checkbox/manifest.json"
-    },
-    {
-      "name": "typograpahy",
-      "displayName": "Typography",
-      "description": "A customizable switch component.",
-      "version": "1.0.0",
-      "manifest": "components/typography/manifest.json"
+      "manifest": "components/skeleton/manifest.json"
     },
     {
       "name": "switch",
@@ -39,46 +18,88 @@
       "manifest": "components/switch/manifest.json"
     },
     {
-      "name": "skeleton",
-      "displayName": "Skeleton",
-      "description": "A customizable skeleton component.",
+      "name": "table",
+      "displayName": "Table",
+      "description": "A customizable table component.",
       "version": "1.0.0",
-      "manifest": "components/skeleton/manifest.json"
+      "manifest": "components/table/manifest.json"
     },
     {
-      "name": "carousel",
-      "displayName": "Carousel",
-      "description": "A customizable carousel component.",
+      "name": "modal",
+      "displayName": "Modal",
+      "description": "A customizable modal component.",
       "version": "1.0.0",
-      "manifest": "components/carousel/manifest.json"
+      "manifest": "components/modal/manifest.json"
     },
     {
-      "name": "avatar",
-      "displayName": "Avatar",
-      "description": "A depiction of a profile image",
+      "name": "multiinput",
+      "displayName": "MultiInput",
+      "description": "A customizable multi-input component.",
       "version": "1.0.0",
-      "manifest": "components/avatar/manifest.json"
+      "manifest": "components/multiinput/manifest.json"
     },
     {
-      "name": "alert",
-      "displayName": "Alert",
-      "description": "A notification component for displaying contextual messages.",
+      "name": "sheet",
+      "displayName": "Sheet",
+      "description": "A customizable sheet component.",
       "version": "1.0.0",
-      "manifest": "components/alert/manifest.json"
+      "manifest": "components/sheet/manifest.json"
     },
     {
-      "name": "accordion",
-      "displayName": "Accordion",
-      "description": "A component for grouping items.",
+      "name": "toast",
+      "displayName": "Toast",
+      "description": "A customizable toast component.",
       "version": "1.0.0",
-      "manifest": "components/accordion/manifest.json"
+      "manifest": "components/toast/manifest.json"
     },
     {
-      "name": "card",
-      "displayName": "Card",
-      "description": "A customizable card component.",
+      "name": "tooltip",
+      "displayName": "ToolTip",
+      "description": "A customizable tooltip component.",
       "version": "1.0.0",
-      "manifest": "components/card/manifest.json"
+      "manifest": "components/tooltip/manifest.json"
+    },
+    {
+      "name": "typograpahy",
+      "displayName": "Typography",
+      "description": "A customizable typography component.",
+      "version": "1.0.0",
+      "manifest": "components/typography/manifest.json"
+    },
+    {
+      "name": "tabs",
+      "displayName": "Tabs",
+      "description": "A customizable tabs component.",
+      "version": "1.0.0",
+      "manifest": "components/tabs/manifest.json"
+    },
+    {
+      "name": "textarea",
+      "displayName": "TextArea",
+      "description": "A customizable textarea component.",
+      "version": "1.0.0",
+      "manifest": "components/textarea/manifest.json"
+    },
+    {
+      "name": "theme-toggle",
+      "displayName": "ThemeToggle",
+      "description": "A customizable theme toggle component.",
+      "version": "1.0.0",
+      "manifest": "components/theme-toggle/manifest.json"
+    },
+    {
+      "name": "metric-card",
+      "displayName": "MetricCard",
+      "description": "A customizable metric card component.",
+      "version": "1.0.0",
+      "manifest": "components/metric-card/manifest.json"
+    },
+    {
+      "name": "badge",
+      "displayName": "Badge",
+      "description": "A customizable badge component.",
+      "version": "1.0.0",
+      "manifest": "components/badge/manifest.json"
     },
     {
       "name": "button",
@@ -88,11 +109,74 @@
       "manifest": "components/button/manifest.json"
     },
     {
-      "name": "badge",
-      "displayName": "Badge",
-      "description": "A customizable badge component.",
+      "name": "card",
+      "displayName": "Card",
+      "description": "A customizable card component.",
       "version": "1.0.0",
-      "manifest": "components/badge/manifest.json"
+      "manifest": "components/card/manifest.json"
+    },
+    {
+      "name": "accordion",
+      "displayName": "Accordion",
+      "description": "A component for grouping items.",
+      "version": "1.0.0",
+      "manifest": "components/accordion/manifest.json"
+    },
+    {
+      "name": "alert",
+      "displayName": "Alert",
+      "description": "A notification component for displaying contextual messages.",
+      "version": "1.0.0",
+      "manifest": "components/alert/manifest.json"
+    },
+    {
+      "name": "avatar",
+      "displayName": "Avatar",
+      "description": "A depiction of a profile image",
+      "version": "1.0.0",
+      "manifest": "components/avatar/manifest.json"
+    },
+    {
+      "name": "datatable",
+      "displayName": "Datatable",
+      "description": "A customizable datatable component.",
+      "version": "1.0.0",
+      "manifest": "components/datatable/manifest.json"
+    },
+    {
+      "name": "dropdown",
+      "displayName": "Dropdown",
+      "description": "A customizable dropdown component.",
+      "version": "1.0.0",
+      "manifest": "components/dropdown/manifest.json"
+    },
+    {
+      "name": "input",
+      "displayName": "Input",
+      "description": "A customizable input component.",
+      "version": "1.0.0",
+      "manifest": "components/input/manifest.json"
+    },
+    {
+      "name": "carousel",
+      "displayName": "Carousel",
+      "description": "A customizable carousel component.",
+      "version": "1.0.0",
+      "manifest": "components/carousel/manifest.json"
+    },
+    {
+      "name": "checkbox",
+      "displayName": "Checkbox",
+      "description": "A customizable checkbox component.",
+      "version": "1.0.0",
+      "manifest": "components/checkbox/manifest.json"
+    },
+    {
+      "name": "combobox",
+      "displayName": "Combobox",
+      "description": "A customizable combobox component.",
+      "version": "1.0.0",
+      "manifest": "components/combobox/manifest.json"
     }
   ]
 }

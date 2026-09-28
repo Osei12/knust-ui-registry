@@ -1,0 +1,25 @@
+{
+  "name": "metric-card",
+  "displayName": "MetricCard",
+  "description": "A customizable metric card component.",
+  "version": "1.0.0",
+  "files": [
+    {
+      "path": "MetricCard.razor",
+      "url": "components/metric-card/MetricCard.razor",
+      "type": "component"
+    },
+
+    {
+      "path": "MetricCard.razor.cs",
+      "url": "components/metric-card/MetricCard.razor.cs",
+      "type": "cs"
+    }
+  ],
+  "dependencies": {
+    "utils": [],
+    "components": [],
+    "services": []
+  },
+  "packages": []
+}

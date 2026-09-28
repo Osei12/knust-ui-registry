@@ -1,0 +1,25 @@
+@namespace __MYUI_NAMESPACE__
+@typeparam TItem
+
+<Table Class="@Class" AdditionalAttributes="AdditionalAttributes">
+    @if (!string.IsNullOrEmpty(Caption))
+    {
+        <TableCaption>@Caption</TableCaption>
+    }
+    <TableHeader>
+        <TableRow>
+            @HeaderContent
+        </TableRow>
+    </TableHeader>
+    <TableBody>
+        @if (Items != null)
+        {
+            @foreach (var item in Items)
+            {
+                <TableRow>
+                    @RowTemplate?.Invoke(item)
+                </TableRow>
+            }
+        }
+    </TableBody>
+</Table>

@@ -1,0 +1,19 @@
+{
+  "name": "multiinput",
+  "displayName": "MultiInput",
+  "description": "A customizable multi-input component.",
+  "version": "1.0.0",
+  "files": [
+    {
+      "path": "MultiInput.razor",
+      "url": "components/multiinput/MultiInput.razor",
+      "type": "component"
+    }
+  ],
+  "dependencies": {
+    "utils": [],
+    "components": [],
+    "services": []
+  },
+  "packages": []
+}

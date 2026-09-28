@@ -1,0 +1,45 @@
+{
+  "name": "modal",
+  "displayName": "Modal",
+  "description": "A customizable modal component.",
+  "version": "1.0.0",
+  "files": [
+    {
+      "path": "Modal.razor",
+      "url": "components/modal/Modal.razor",
+      "type": "component"
+    },
+    {
+      "path": "ModalHeader.razor",
+      "url": "components/modal/ModalHeader.razor",
+      "type": "component"
+    },
+    {
+      "path": "ModalTitle.razor",
+      "url": "components/modal/ModalTitle.razor",
+      "type": "component"
+    },
+    {
+      "path": "ModalDescription.razor",
+      "url": "components/modal/ModalDescription.razor",
+      "type": "component"
+    },
+    {
+      "path": "ModalFooter.razor",
+      "url": "components/modal/ModalFooter.razor",
+      "type": "component"
+    },
+
+    {
+      "path": "Modal.razor.cs",
+      "url": "components/modal/Modal.razor.cs",
+      "type": "cs"
+    }
+  ],
+  "dependencies": {
+    "utils": [],
+    "components": [],
+    "services": []
+  },
+  "packages": []
+}

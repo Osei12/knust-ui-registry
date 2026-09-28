@@ -1,0 +1,24 @@
+{
+  "name": "textarea",
+  "displayName": "TextArea",
+  "description": "A customizable textarea component.",
+  "version": "1.0.0",
+  "files": [
+    {
+      "path": "TextArea.razor",
+      "url": "components/textarea/TextArea.razor",
+      "type": "component"
+    },
+    {
+      "path": "TextArea.razor.cs",
+      "url": "components/textarea/TextArea.razor.cs",
+      "type": "cs"
+    }
+  ],
+  "dependencies": {
+    "utils": [],
+    "components": [],
+    "services": []
+  },
+  "packages": []
+}

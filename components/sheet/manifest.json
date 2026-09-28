@@ -1,0 +1,44 @@
+{
+  "name": "sheet",
+  "displayName": "Sheet",
+  "description": "A customizable sheet component.",
+  "version": "1.0.0",
+  "files": [
+    {
+      "path": "Sheet.razor",
+      "url": "components/sheet/Sheet.razor",
+      "type": "component"
+    },
+    {
+      "path": "SheetHeader.razor",
+      "url": "components/sheet/SheetHeader.razor",
+      "type": "component"
+    },
+    {
+      "path": "SheetTitle.razor",
+      "url": "components/sheet/SheetTitle.razor",
+      "type": "component"
+    },
+    {
+      "path": "SheetDescription.razor",
+      "url": "components/sheet/SheetDescription.razor",
+      "type": "component"
+    },
+    {
+      "path": "SheetFooter.razor",
+      "url": "components/sheet/SheetFooter.razor",
+      "type": "component"
+    },
+    {
+      "path": "Sheet.razor.cs",
+      "url": "components/sheet/Sheet.razor.cs",
+      "type": "cs"
+    }
+  ],
+  "dependencies": {
+    "utils": [],
+    "components": [],
+    "services": ["theme"]
+  },
+  "packages": []
+}

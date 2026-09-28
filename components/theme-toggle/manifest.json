@@ -1,0 +1,19 @@
+{
+  "name": "theme-toggle",
+  "displayName": "ThemeToggle",
+  "description": "A customizable theme toggle component.",
+  "version": "1.0.0",
+  "files": [
+    {
+      "path": "ThemeToggle.razor",
+      "url": "components/theme-toggle/ThemeToggle.razor",
+      "type": "component"
+    }
+  ],
+  "dependencies": {
+    "utils": [],
+    "components": [],
+    "services": ["theme"]
+  },
+  "packages": []
+}

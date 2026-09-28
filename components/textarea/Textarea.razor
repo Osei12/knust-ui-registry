@@ -1,0 +1,36 @@
+@namespace __MYUI_NAMESPACE__
+
+<div class="grid w-full items-center gap-1.5 @Class">
+    @if (!string.IsNullOrEmpty(Label))
+    {
+        <label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-slate-900 dark:text-white">
+            @Label
+            @if (Required)
+            {
+                <span class="text-status-error ml-1">*</span>
+            }
+        </label>
+    }
+    
+    <textarea 
+        value="@Value"
+        @oninput="OnInput"
+        placeholder="@Placeholder"
+        disabled="@Disabled"
+        rows="@Rows"
+        class="@TextareaClasses"
+        @attributes="AdditionalAttributes">
+    </textarea>
+
+    @if (!string.IsNullOrEmpty(Description))
+    {
+        <p class="text-[0.8rem] text-slate-500 dark:text-slate-400">@Description</p>
+    }
+
+    @if (EditContext != null && ValueExpression != null)
+    {
+        <div class="text-[0.8rem] font-medium text-red-500">
+            <ValidationMessage For="@ValueExpression" />
+        </div>
+    }
+</div>

@@ -1,0 +1,34 @@
+{
+  "name": "dropdown",
+  "displayName": "Dropdown",
+  "description": "A customizable dropdown component.",
+  "version": "1.0.0",
+  "files": [
+    {
+      "path": "Dropdown.razor",
+      "url": "components/dropdown/Dropdown.razor",
+      "type": "component"
+    },
+    {
+      "path": "DropdownItem.razor",
+      "url": "components/dropdown/DropdownItem.razor",
+      "type": "component"
+    },
+    {
+      "path": "DropdownSeparator.razor",
+      "url": "components/dropdown/DropdownSeparator.razor",
+      "type": "component"
+    },
+    {
+      "path": "Dropdown.razor.cs",
+      "url": "components/dropdown/Dropdown.razor.cs",
+      "type": "cs"
+    }
+  ],
+  "dependencies": {
+    "utils": [],
+    "components": [],
+    "services": []
+  },
+  "packages": []
+}

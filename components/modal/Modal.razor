@@ -1,0 +1,25 @@
+@namespace __MYUI_NAMESPACE__
+
+@if (_show)
+{
+    <div class="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 overflow-hidden @(_isVisible ? "opacity-100" : "opacity-0") transition-opacity duration-300">
+        @* Backdrop *@
+        <div class="fixed inset-0  bg-slate-950/80 backdrop-blur-sm" 
+             @onclick="HandleBackdropClick"></div>
+
+        @* Modal Content *@
+        <div class="relative z-[999] flex flex-col w-full max-w-lg border border-slate-200 bg-white shadow-lg rounded-2xl dark:border-white/10 dark:bg-slate-950 transition-all duration-300 ease-out @Class @(_isVisible ? "scale-100 opacity-100" : "scale-95 opacity-0")"
+             @attributes="AdditionalAttributes">
+            
+            <div class="max-h-[90vh] overflow-y-auto p-6">
+                @ChildContent
+            </div>
+
+            <button @onclick="CloseAsync" 
+                    class="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none">
+                <Blazicon Svg="Lucide.X" class="h-4 w-4" />
+                <span class="sr-only">Close</span>
+            </button>
+        </div>
+    </div>
+}

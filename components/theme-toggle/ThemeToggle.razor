@@ -1,0 +1,27 @@
+@inject ThemeService ThemeService
+@implements IDisposable
+
+<button @onclick="ThemeService.ToggleThemeAsync" 
+        class="inline-flex h-10 w-10 z-50 relative items-center justify-center rounded-lg border border-slate-200 bg-white text-slate-950 transition-colors hover:bg-slate-100 dark:border-white/10 dark:bg-slate-950 dark:text-slate-100 dark:hover:bg-white/5"
+        title="Toggle theme">
+    @if (ThemeService.CurrentTheme == "dark")
+    {
+        <Blazicon Svg="Lucide.Sun" class="h-5 w-5" />
+    }
+    else
+    {
+        <Blazicon Svg="Lucide.Moon" class="h-5 w-5" />
+    }
+</button>
+
+@code {
+    protected override void OnInitialized()
+    {
+        ThemeService.OnThemeChanged += StateHasChanged;
+    }
+
+    public void Dispose()
+    {
+        ThemeService.OnThemeChanged -= StateHasChanged;
+    }
+}

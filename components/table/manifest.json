@@ -1,0 +1,59 @@
+{
+  "name": "table",
+  "displayName": "Table",
+  "description": "A customizable table component.",
+  "version": "1.0.0",
+  "files": [
+    {
+      "path": "Table.razor",
+      "url": "components/table/Table.razor",
+      "type": "component"
+    },
+    {
+      "path": "TableHead.razor",
+      "url": "components/table/TableHead.razor",
+      "type": "component"
+    },
+    {
+      "path": "TableHeader.razor",
+      "url": "components/table/TableHeader.razor",
+      "type": "component"
+    },
+    {
+      "path": "TableBody.razor",
+      "url": "components/table/TableBody.razor",
+      "type": "component"
+    },
+    {
+      "path": "TableCell.razor",
+      "url": "components/table/TableCell.razor",
+      "type": "component"
+    },
+    {
+      "path": "TableRow.razor",
+      "url": "components/table/TableRow.razor",
+      "type": "component"
+    },
+    {
+      "path": "TableCaption.razor",
+      "url": "components/table/TableCaption.razor",
+      "type": "component"
+    },
+    {
+      "path": "TableFooter.razor",
+      "url": "components/table/TableFooter.razor",
+      "type": "component"
+    },
+    {
+      "path": "Table.razor.cs",
+      "url": "components/table/Table.razor.cs",
+      "type": "cs"
+    }
+  ],
+  "dependencies": {
+    "utils": [],
+    "components": [],
+    "services": []
+  },
+  "packages": []
+}

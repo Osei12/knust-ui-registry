@@ -1,0 +1,9 @@
+@namespace __MYUI_NAMESPACE__
+
+<button type="button"
+        @onclick="HandleClick"
+        disabled="@Disabled"
+        class="relative flex w-full cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none transition-colors hover:bg-slate-100 hover:text-slate-900 disabled:pointer-events-none disabled:opacity-50 dark:hover:bg-white/5 dark:hover:text-slate-50 @Class"
+        @attributes="AdditionalAttributes">
+    @ChildContent
+</button>
