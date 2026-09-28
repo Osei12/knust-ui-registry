@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "files": [
     {
-      "path": "Accordion",
+      "path": "Accordion.razor",
       "url": "components/accordion/Accordion.razor",
       "type": "component"
     },
@@ -25,10 +25,10 @@
       "type": "cs"
     }
   ],
- "dependencies":{
-    "utils":[],
-    "components":[],
-    "services":[]
+  "dependencies": {
+    "utils": [],
+    "components": [],
+    "services": []
   },
   "packages": []
 }

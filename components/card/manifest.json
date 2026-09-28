@@ -25,7 +25,7 @@
       "type": "component"
     },
     {
-      "path": "CardDescripton.razor",
+      "path": "CardDescription.razor",
       "url": "components/card/CardDescription.razor",
       "type": "component"
     },
