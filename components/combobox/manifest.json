@@ -8,21 +8,17 @@
       "path": "Combobox.razor",
       "url": "components/combobox/Combobox.razor",
       "type": "component"
-    }
-   
-    ,
+    },
     {
       "path": "Combobox.razor.cs",
-      "url": "components/combobox/CarouselPrevious.razor.cs",
+      "url": "components/combobox/Combobox.razor.cs",
       "type": "cs"
     }
-   
-  
   ],
-  "dependencies":{
-    "utils":[],
-    "components":[],
-    "services":["theme"]
+  "dependencies": {
+    "utils": [],
+    "components": [],
+    "services": ["theme"]
   },
   "packages": []
 }
