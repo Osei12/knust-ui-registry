@@ -5,17 +5,15 @@
   "version": "1.0.0",
   "files": [
     {
-      "path": "Carousel.razor",
+      "path": "Checkbox.razor",
       "url": "components/checkbox/Checkbox.razor",
       "type": "component"
     }
-   
-  
   ],
-  "dependencies":{
-    "utils":[],
-    "components":[],
-    "services":[]
+  "dependencies": {
+    "utils": [],
+    "components": [],
+    "services": []
   },
   "packages": []
 }
