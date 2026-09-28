@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Components;
 using System.Threading.Tasks;
-
+using __MYUI_NAMESPACE__.Utils;
 namespace __MYUI_NAMESPACE__;
 
 public partial class Modal : ComponentBase
