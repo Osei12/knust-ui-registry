@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Components;
 using System.Collections.Generic;
 
+using __UTILS__;
 namespace __MYUI_NAMESPACE__;
 
 public partial class Card : ComponentBase

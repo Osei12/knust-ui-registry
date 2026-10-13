@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Components;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-
+using __UTILS__;
 namespace __MYUI_NAMESPACE__
 {
     public partial class Alert : ComponentBase
