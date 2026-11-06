@@ -1,27 +1,27 @@
 {
   "name": "tooltip",
-  "displayName": "ToolTip",
+  "displayName": "Tooltip",
   "description": "A customizable tooltip component.",
   "version": "1.0.0",
   "files": [
     {
-      "path": "ToolTip.razor",
-      "url": "components/tooltip/ToolTip.razor",
+      "path": "Tooltip.razor",
+      "url": "components/tooltip/Tooltip.razor",
       "type": "component"
     },
     {
-      "path": "ToolTipContent.razor",
-      "url": "components/tooltip/ToolTipContent.razor",
+      "path": "TooltipContent.razor",
+      "url": "components/tooltip/TooltipContent.razor",
       "type": "component"
     },
     {
-      "path": "ToolTipTrigger.razor",
-      "url": "components/tooltip/ToolTipTrigger.razor",
+      "path": "TooltipTrigger.razor",
+      "url": "components/tooltip/TooltipTrigger.razor",
       "type": "component"
     },
     {
-      "path": "ToolTip.razor.cs",
-      "url": "components/tooltip/ToolTip.razor.cs",
+      "path": "Tooltip.razor.cs",
+      "url": "components/tooltip/Tooltip.razor.cs",
       "type": "cs"
     }
   ],
