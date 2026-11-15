@@ -6,12 +6,12 @@
   "files": [
     {
       "path": "TextArea.razor",
-      "url": "components/textarea/TextArea.razor",
+      "url": "components/textarea/Textarea.razor",
       "type": "component"
     },
     {
       "path": "TextArea.razor.cs",
-      "url": "components/textarea/TextArea.razor.cs",
+      "url": "components/textarea/Textarea.razor.cs",
       "type": "cs"
     }
   ],

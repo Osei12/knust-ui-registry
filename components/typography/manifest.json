@@ -6,7 +6,7 @@
   "files": [
     {
       "path": "Typography.razor",
-      "url": "components/typograpahy/Typography.razor",
+      "url": "components/typography/Typography.razor",
       "type": "component"
     }
   ],
