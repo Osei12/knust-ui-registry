@@ -2,8 +2,8 @@ using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Forms;
 using System.Linq.Expressions;
 using System.Collections.Generic;
-
-namespace KnustUiLibrary.Components.UI;
+using __UTILS__;
+namespace __MYUI_NAMESPACE__;
 
 public partial class Select : ComponentBase, IDisposable
 {
