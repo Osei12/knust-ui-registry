@@ -1,0 +1,24 @@
+{
+  "name": "select",
+  "displayName": "Select",
+  "description": "A customizable select component.",
+  "version": "1.0.0",
+  "files": [
+    {
+      "path": "Select.razor",
+      "url": "components/select/Select.razor",
+      "type": "component"
+    },
+    {
+      "path": "Select.razor.cs",
+      "url": "components/select/Select.razor.cs",
+      "type": "cs"
+    }
+  ],
+  "dependencies": {
+    "utils": [],
+    "components": [],
+    "services": ["theme"]
+  },
+  "packages": []
+}
