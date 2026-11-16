@@ -60,7 +60,7 @@
       "manifest": "components/tooltip/manifest.json"
     },
     {
-      "name": "typograpahy",
+      "name": "typography",
       "displayName": "Typography",
       "description": "A customizable typography component.",
       "version": "1.0.0",
